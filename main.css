@@ -233,7 +233,7 @@ hr{
 }
 
 .contact-div-2{
-    padding: 5% 15%;
+    padding: 10% 15%;
 }
 
 .contact-div, .contact-div-2 {
@@ -408,14 +408,51 @@ hr{
 /* ----------------about--------------- */
 
 .about{
-    padding: 50px 5%;
+    /* padding: 50px 15% 50px 8%; */
+    padding: 50PX 15%;
     width: 100%;
-
+    
 }
 
+.about ol{
+    font-size: 20px;
+    margin-left: 3%;
+    list-style-position: inside;
+}
+
+.profile-pic{
+    margin: 0% 0% 2% 5%;
+    /* margin-bottom: 2%; */
+    max-width: 400px;
+    /* min-height:525px; */
+}
+
+.blue-pic{
+    margin: 0% 5% 2% 0%;
+    max-width: 450px;
+}
+
+.right{
+    float: right;
+}
+
+.left{
+    float: left;
+}
 .about-header{
     margin-bottom: 50px;
 }
+
+.about p{
+    font-size: 20px;
+    line-height:30px
+}
+
+.emphasis{
+    color: #B56576;
+    font-weight: 600;
+}
+
 .link{
     text-decoration: underline;
 }
