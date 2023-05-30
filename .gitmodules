@@ -1,0 +1,3 @@
+[submodule "path_to_submodule"] 
+  path = alfonsos-website 
+  url = git:https://github.com/Hisui45/alfonsos-website.git
