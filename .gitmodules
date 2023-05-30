@@ -1,6 +1,6 @@
 [submodule "alfonsos-website"] 
   path = alfonsos-website 
-  url = git:https://github.com/Hisui45/alfonsos-website.git
+  url = git:alfonsos-website.git
   [submodule "sewsewclothing"] 
   path = sewsewclothing
-  url = git:https://github.com/Hisui45/sewsewclothing.git
+  url = git:sewsewclothing.git
