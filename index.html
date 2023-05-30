@@ -2,12 +2,13 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-    <meta name ="author" content = "Hisui45">
-    <meta name = "description" content = "landing page of portfolio">
-    <meta name="viewport" content="width=device-width, intial-scale=1.0">
-    <title>Jade Locke's Portfolio</title>
-    <link rel="icon" href="img/logo/logo 1.svg" type="image/x-icon">
-    <link rel="stylesheet" href="main.css" type="text/css">
+        <meta name ="author" content = "Hisui45">
+        <meta name = "description" content = "landing page of portfolio">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>Home</title>
+        <link rel="icon" href="img/logo/logo 1.svg" type="image/x-icon">
+        <link rel="stylesheet" href="main.css" type="text/css">
+
     </head>
     <body>
         <main>
@@ -16,36 +17,44 @@
 
                 <header>
                     <a href="index.html"> 
-                        <img class="logo" src="img/logo/logo 2.svg"> 
+                        <img class="logo" src="img/logo/logo 2-cropped.svg"> 
                     </a>    
-                    <nav>
+                    <nav class="header-nav">
                         <ul>
                             <li><a href="projects.html">Projects</a></li>
                             <li><a href="about.html">About</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </nav>
                     <div class="div-icon">
+                        <img class="icon menu" src="img/logo/menu-icon.svg"> 
                         <a href="https://github.com/Hisui45"> 
-                            <img class="icon" src="img/logo/github icon.svg"> 
+                            <img class="icon github" src="img/logo/github icon.svg"> 
                         </a>   
                     </div>
+
+                    
                     
                 </header>
+
+                <nav class="menu-nav" id="menu">
+                    <ul>
+                        <li><a href="projects.html">Projects</a></li>
+                        <hr class="menu-divider">
+                        <li><a href="about.html">About</a></li>
+                        <hr class="menu-divider">
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
                 
                 <section class="index-intro"  id="intro">
 
                         <h1>Hi. 
                         <br> 
                         I'm Jade.</h1>
-                        <hr>
+                        <hr class="divider">
                         <p>I'm a front-end web developer. </p> 
-                        <!-- <br> 
-                        When I'm designing, I embrace minimalistic styles and emphasize fuctionality. 
-                        <br> 
-                        But, the possibilities are unlimited and I'm always ready to explore. 
-                        <br>
-                        <br> -->
+
                         <a href="#features" class="intro-a">I believe you'll want to leave
                         <span class="span-space"><em>space</em></span>
                         for me on your next project.
@@ -60,8 +69,7 @@
                     <li><strong>fuctionality</strong></span></li>
 
                     <li><strong>unlimited possibilities </strong></li>
-                        
-                        <!-- waiting to be <span class="span-uppercase">explored</span> </li> -->
+                    
                 </ol>
                 
             </section>
@@ -97,8 +105,8 @@
             <!-- -------contact-------- -->
 
             <section class="index-contact" id="contact">
-                <div class="contact-div">
-                    <div class="contact-div-2">
+                <!-- <div class="contact-div">
+                    <div class="contact-div-2"> -->
                         <h2>I'd love to hear from you.</h2>
                 <form action="#" method="post">
                     <fieldset>
@@ -112,15 +120,15 @@
               
                     <fieldset>
                       <legend>What would you like to say?</legend>
-                      <label for="message">Message:</label>
+                      <label class="message" for="message">Message:</label>
                       <textarea id="message" name="message" rows="5" required></textarea>
                     </fieldset>
               
                     <input type="submit" value="Submit">
                   </form>
-                    </div>
+                    <!-- </div>
                     
-                </div>
+                </div> -->
                 
                    
             </section>
@@ -131,6 +139,11 @@
         
         
     </body>
+
+    <script>
+        var menu = document.getElementById('menu');
+        menu.style.maxHeight = "0px";
+    </script>
     <!-- <footer>
         <a href="https://github.com/Hisui45"> 
             <img class="icon" src="img/logo/github icon.svg"> 
