@@ -56,72 +56,43 @@ header{
     width: 100%;
     padding: 15px 4% 0px 4%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 0.5fr 1fr 0.5fr;
 }
-
 
 .logo{
-    width: 70px;    
+    width: 100px;    
 }
 
-@media screen and (min-width:768px){
-    header{
-        width: 100%;
-        padding: 15px 2%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .logo{
-        width: 100px;    
-    }
-    
-}
-
-
-.header-nav{
-    display: none;
+header nav{
+    display: flex;
     justify-content: center;
-    align-items: center;
-
+    align-items: center;  
 }
 
-.menu-nav{
-    display: flex;
-    width: 100%;
-    background: #2D2D39;
-    
-}
-
-@media screen and (min-width:768px){
-    .header-nav{
-        display: flex;
-    }
-
-    .menu-nav{
-        display: none;
-    }
-
-
-}
-
-header ul{
-    list-style: none;
-    
-   
-}
-
-.header-nav ul{
-    display: flex;
-
-}
-
-.header-nav ul li{
+header ul li{
     display: inline-block;
     margin-inline: 15px;
 }
 
-.header-nav ul li a{
+.github{
+    width: 60px;
+    display: block;
+}
+
+.menu-icon{
+    text-align: right;
+    display: none;
+    width: 60px;
+}
+
+.div-icon{
+    grid-column: 3/4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header ul li a{
     text-decoration: none;
     color: #F8E9E9;
     font-weight: 700;
@@ -135,36 +106,94 @@ header ul li a:hover{
     /* text-transform: uppercase; */
 }
 
-.menu-nav ul {
-    width: 100%;
+@media only screen and (max-width:425px){
+    header{
+        padding: 8px 2% 0px 2%;
+    }
+
+    nav ul{
+        position: absolute;
+        top: 65px;
+        left:0px;
+        width: 100%;
+        background: #2D2D39;
+        overflow: hidden;
+        transition: max-height 0.8s;
+    } 
+
+
+    .logo{
+        width: 50px;    
+    }
+
+    .menu-icon{
+        width:48px;
+    }
+
 }
 
-.menu-nav ul li{
-    padding: 5px 4%;
-    text-align: right;
+
+@media only screen and (max-width:425px){
+
+    nav ul{
+        position: absolute;
+        top: 65px;
+        left:0px;
+
+    } 
+
 
 }
 
-.menu-divider{
-    background: #2D2D39;
-    border-color: #2D2D39;
+
+@media only screen and (min-width:425px) and (max-width:645px){
+
+    nav ul{
+        position: absolute;
+        top: 125px;
+
+    } 
+
+
 }
 
-.div-icon{
-    grid-column: 3/4;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+
+
+@media only screen and (max-width:645px){
+
+
+    nav ul{
+        width: 100%;
+        background: #2D2D39;
+        overflow: hidden;
+        transition: max-height 0.8s;
+    } 
+
+    header ul li{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: right;
+        display: block;
+    }
+
+
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    
+    .github{
+        display: none;
+    }
+
+    header ul li a:hover{
+        
+        top: 0px;
+        color: #d6baba;
+    }
+
 }
 
-.icon{
-    width: 50px;
-    text-align: right;
-}
-
-.github{
-    display: none;
-}
 
 .index-intro{
     display: flex;
@@ -177,13 +206,7 @@ header ul li a:hover{
         padding: 80px 15%;
     }
 
-    .github{
-        display: block;
-    }
 
-    .menu{
-        display: none;
-    }
 }
 
 @media screen and (min-width:1440px){
@@ -503,9 +526,56 @@ form legend {
 
   /* ----------- projects ------------- */
   .header{
-    padding: 26px 5%;
+    padding: 26px 6%;
     background: #16171d;
   }
+
+  @media only screen and (max-width:425px){
+
+    .header nav ul{
+        position: absolute;
+        top: 80px;
+        left:0px;
+
+    } 
+
+
+}
+
+
+@media only screen and (min-width:425px) and (max-width:645px){
+
+    .header nav ul{
+        position: absolute;
+        top: 150px;
+    } 
+
+
+}
+
+
+
+  @media only screen and (max-width:645px){
+
+
+
+    .header nav ul{
+        padding: 0px 3%;
+        width: 100%;
+        background: #2D2D39;
+    }
+
+}
+
+@media only screen and (max-width:425px){
+
+    .header{
+        padding: 15px 3%;
+    }
+
+}
+
+
 
   .header-logo{
     width:75px;

@@ -19,15 +19,15 @@
                     <a href="index.html"> 
                         <img class="logo" src="img/logo/logo 2-cropped.svg"> 
                     </a>    
-                    <nav class="header-nav">
-                        <ul>
+                    <nav>
+                        <ul id="menuItems">
                             <li><a href="projects.html">Projects</a></li>
                             <li><a href="about.html">About</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </nav>
                     <div class="div-icon">
-                        <img class="icon menu" src="img/logo/menu-icon.svg"> 
+                        <img class="menu-icon" src="img/logo/menu-icon.svg" onclick="menutoggle()"> 
                         <a href="https://github.com/Hisui45"> 
                             <img class="icon github" src="img/logo/github icon.svg"> 
                         </a>   
@@ -37,7 +37,7 @@
                     
                 </header>
 
-                <nav class="menu-nav" id="menu">
+                <!-- <nav class="menu-nav" id="menu">
                     <ul>
                         <li><a href="projects.html">Projects</a></li>
                         <hr class="menu-divider">
@@ -45,7 +45,7 @@
                         <hr class="menu-divider">
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
-                </nav>
+                </nav> -->
                 
                 <section class="index-intro"  id="intro">
 
@@ -141,8 +141,19 @@
     </body>
 
     <script>
-        var menu = document.getElementById('menu');
+        var menu = document.getElementById('menuItems');
         menu.style.maxHeight = "0px";
+
+        function menutoggle(){
+
+            if(menu.style.maxHeight == "0px"){
+
+                menu.style.maxHeight = "200px"
+
+            }else{
+                menu.style.maxHeight = "0px"
+            }
+        }
     </script>
     <!-- <footer>
         <a href="https://github.com/Hisui45"> 

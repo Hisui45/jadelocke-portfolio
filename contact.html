@@ -16,17 +16,17 @@
             <section class="contact-intro">
                 <header>
                     <a href="index.html"> 
-                        <img class="logo" src="img/logo/logo 2.svg"> 
+                        <img class="logo" src="img/logo/logo 2-cropped.svg">  
                     </a>    
                     <nav>
-                        <ul>
+                        <ul id="menuItems">
                             <li><a href="projects.html">Projects</a></li>
                             <li><a href="about.html">About</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </nav>
                     <div class="div-icon">
-                        <img class="icon menu" src="img/logo/menu-icon.svg"> 
+                        <img class="menu-icon" src="img/logo/menu-icon.svg" onclick="menutoggle()">  
                         <a href="https://github.com/Hisui45"> 
                             <img class="icon github" src="img/logo/github icon.svg"> 
                         </a>   
@@ -63,4 +63,21 @@
             </section>
         </main>
     </body>
+
+    <script>
+        var menu = document.getElementById('menuItems');
+        menu.style.maxHeight = "0px";
+
+        function menutoggle(){
+
+            if(menu.style.maxHeight == "0px"){
+
+                menu.style.maxHeight = "200px"
+
+            }else{
+                menu.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
 </html>
