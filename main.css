@@ -54,7 +54,7 @@ body{
 
 header{
     width: 100%;
-    padding: 15px 4% 0px 4%;
+    padding: 26px 6%;
     display: grid;
     grid-template-columns: 0.5fr 1fr 0.5fr;
 }
@@ -347,8 +347,8 @@ hr{
 
 .index-features a{
     flex-basis: 100%;
-    width: 250px;
     margin-bottom: 15px;
+    
 }
 
 @media screen and (min-width:768px){
@@ -360,7 +360,8 @@ hr{
     }
 
     .index-features a{
-        flex-basis: 25%;
+        flex-basis: 45%;
+        /* flex-basis: 30%; */
     }
     
 }
@@ -368,7 +369,7 @@ hr{
 
 .features-figure img{
     width: 100%;
-    box-shadow: 4px 4px 4px rgba(123, 120, 120, 0.522);
+    /* box-shadow: 4px 4px 4px rgba(123, 120, 120, 0.522); */
     cursor: pointer;
 }
 
@@ -619,7 +620,7 @@ form legend {
 }
 
 .projects-figure a{
-    max-width: 360px;
+    /* max-width: 360px; */
     margin-bottom: 15px;
     flex-basis: 100%;
     transition: margin 0.5s ease-in-out;
@@ -628,6 +629,7 @@ form legend {
 
 .projects-figure img{
     width: 100%;
+    height: auto;
     transition: margin 0.5s ease-in-out;
 }
 
@@ -654,11 +656,11 @@ form legend {
         justify-content: space-between;
     }
     .projects-figure a{
-        flex-basis: 30%;
+        flex-basis: 65%;
     }
     
     .projects-figure figcaption{
-        flex-basis: 65%;
+        flex-basis: 30%;
     }
 
     .tech-ul{
@@ -675,15 +677,15 @@ form legend {
     }
 
     .projects-figure a{
-        flex-basis: 25%;
+        flex-basis: 45%;
     }
     
     .projects-figure figcaption{
-        flex-basis: 55%;
+        flex-basis: 45%;
     }
 
     .tech-ul{
-        flex-basis: 15%;
+        flex-basis: 5%;
         
     }
   
