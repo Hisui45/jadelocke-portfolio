@@ -30,6 +30,11 @@ body{
 
 }
 
+.offscreen{
+    position: absolute;
+    left:-10000000px;
+}
+
 /* index page  */
 
 .section-intro{
